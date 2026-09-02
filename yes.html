@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FruzzHub Sample 1</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			background: radial-gradient(circle at 30% 50%, #1e4d2b 0%, #7bc98c 70%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 40px 30px;
+			font-family: Arial, sans-serif;
+			background-image: url("images/mainbg.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+
+		.main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 60px;
+			width: 100%;
+			max-width: 1400px;
+		}
+
+		.header-logo {
+			text-align: center;
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.header-logo img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.login_form h1 {
+			font-size: 70px;
+			font-family: 'Butflow';
+			margin-top: 10px;
+			color: black;
+			font-weight: 900;
+		}
+
+		.login_form {
+			background-color: #a8dba8;
+			padding: 4%;
+			width: 500px;
+			max-width: 100%;
+			border-radius: 5%;
+			text-align: center;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+			border: 4px solid darkgreen;
+			box-sizing: border-box;
+		}
+
+		input {
+			width: 100%;
+			height: 50px;
+			font-size: 18px;
+			padding: 5px 15px;
+			margin: 8px 0;
+			border: 3px solid darkgreen;
+			border-radius: 25px;
+			box-sizing: border-box;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: rgba(230, 255, 230, 0.85);
+			transition: all 0.25s ease;
+		}
+
+		input:hover,
+		input:focus {
+			transform: scale(1.02);
+			box-shadow: 0 6px 15px rgba(0, 100, 0, 0.25);
+			background-color: rgba(255, 255, 255, 0.95);
+			outline: none;
+		}
+
+		.remember-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 8px 4px;
+			font-size: 16px;
+		}
+
+		.remember-row label {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			color: black;
+		}
+
+		.remember-row input[type="checkbox"] {
+			width: 18px;
+			height: 18px;
+			margin: 0;
+			border-radius: 4px;
+			display: inline-block;
+		}
+
+		button {
+			background-image: linear-gradient(to bottom, #6FBF73, #2E7D32);
+			color: white;
+			width: 100%;
+			max-width: 320px;
+			height: 55px;
+			border: none;
+			border-radius: 30px;
+			display: block;
+			margin: 20px auto 15px auto;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 20px;
+			transition: all 0.3s ease;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		}
+
+		button:hover {
+			background-image: linear-gradient(to bottom, #7DD182, #388E3C);
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+		}
+
+		button:active {
+			transform: scale(0.97);
+		}
+
+		p {
+			font-family: Arial, sans-serif;
+			color: black;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 900px) {
+			body {
+				align-items: flex-start;
+				justify-content: flex-start;
+				padding-top: 20px;
+			}
+
+			.main {
+				flex-direction: column;
+				gap: 30px;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.header-logo {
+				width: 100%;
+				float: none;
+				margin-bottom: 10px;
+				order: 1;
+			}
+
+			.header-logo img {
+				max-width: 240px;
+			}
+
+			.login_form {
+				width: 100%;
+				max-width: 420px;
+				margin: 0 auto;
+				order: 2;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.login_form h1 {
+				font-size: 36px;
+			}
+
+			input {
+				height: 45px;
+				font-size: 16px;
+			}
+
+			.remember-row {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 8px;
+			}
+
+			button {
+				height: 48px;
+				font-size: 18px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="main">
+		<div class="header-logo">
+			<picture>
+				<source srcset="images/mainlogo.png" media="(max-width: 900px)">
+				<img src="images/logo2.png" alt="FruzzHub">
+			</picture>
+		</div>
+
+		<div class="login_form">
+			<form action="sample3.html">
+				<h1>SIGN IN</h1>
+
+				<input type="text" name="username" placeholder="Email" autofocus>
+				<input type="password" name="password" placeholder="Password">
+
+				<div class="remember-row">
+					<label><input type="checkbox" name="remember"> Remember me</label>
+					<a href="sample1b.html">Forgot Password?</a>
+				</div>
+
+				<button type="submit">Sign In</button>
+				<p>Don't have an account? <a href="sample2.html">Sign Up</a></p>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

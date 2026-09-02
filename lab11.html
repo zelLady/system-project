@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 11</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			border: 1px solid #f2c94c;
+			padding: 10px;
+			text-align: left;
+		}
+		th {
+			background-color: #1a3e73;
+			color: white;
+			text-align: center;
+		}
+		.category {
+			color: #1a3e73;
+			font-style: italic;
+			font-weight: bold;
+			text-align: center;
+		}
+		td.value {
+			font-family: "Courier New", monospace;
+		}
+		td.example {
+			text-align: center;
+			font-size: 24px;
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+
+<table>
+	<tr>
+		<th>Category</th>
+		<th>Value</th>
+		<th>Example</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td class="category" rowspan="3">General</td>
+		<td class="value">auto</td>
+		<td class="example" style="cursor: auto;">&nbsp;</td>
+		<td>Default. The browser sets a cursor</td>
+	</tr>
+	<tr>
+		<td class="value">default</td>
+		<td class="example" style="cursor: default;">&nbsp;</td>
+		<td>The default cursor</td>
+	</tr>
+	<tr>
+		<td class="value">none</td>
+		<td class="example" style="cursor: none;">&nbsp;</td>
+		<td>No cursor is rendered for the element</td>
+	</tr>
+
+	<tr>
+		<td class="category" rowspan="5">Links and Status</td>
+		<td class="value">context-menu</td>
+		<td class="example" style="cursor: context-menu;">&nbsp;</td>
+		<td>The cursor indicates that a context-menu is available</td>
+	</tr>
+	<tr>
+		<td class="value">help</td>
+		<td class="example" style="cursor: help;">&nbsp;</td>
+		<td>The cursor indicates that help is available</td>
+	</tr>
+	<tr>
+		<td class="value">pointer</td>
+		<td class="example" style="cursor: pointer;">&nbsp;</td>
+		<td>The cursor is a pointer and indicates a link</td>
+	</tr>
+	<tr>
+		<td class="value">progress</td>
+		<td class="example" style="cursor: progress;">&nbsp;</td>
+		<td>The cursor indicates that the program is busy (in progress)</td>
+	</tr>
+	<tr>
+		<td class="value">wait</td>
+		<td class="example" style="cursor: wait;">&nbsp;</td>
+		<td>The cursor indicates that the program is busy</td>
+	</tr>
+
+	<tr>
+		<td class="category" rowspan="4">Selection</td>
+		<td class="value">cell</td>
+		<td class="example" style="cursor: cell;">&nbsp;</td>
+		<td>The cursor indicates that a cell (or set of cells) may be selected</td>
+	</tr>
+	<tr>
+		<td class="value">crosshair</td>
+		<td class="example" style="cursor: crosshair;">&nbsp;</td>
+		<td>The cursor render as a crosshair</td>
+	</tr>
+	<tr>
+		<td class="value">text</td>
+		<td class="example" style="cursor: text;">&nbsp;</td>
+		<td>The cursor indicates text that may be selected</td>
+	</tr>
+	<tr>
+		<td class="value">vertical-text</td>
+		<td class="example" style="cursor: vertical-text;">&nbsp;</td>
+		<td>The cursor indicates vertical-text that may be selected</td>
+	</tr>
+
+	<tr>
+		<td class="category" rowspan="7">Drag and Drop</td>
+		<td class="value">alias</td>
+		<td class="example" style="cursor: alias;">&nbsp;</td>
+		<td>The cursor indicates an alias of something is to be created</td>
+	</tr>
+	<tr>
+		<td class="value">copy</td>
+		<td class="example" style="cursor: copy;">&nbsp;</td>
+		<td>The cursor indicates something is to be copied</td>
+	</tr>
+	<tr>
+		<td class="value">move</td>
+		<td class="example" style="cursor: move;">&nbsp;</td>
+		<td>The cursor indicates something is to be moved</td>
+	</tr>
+	<tr>
+		<td class="value">no-drop</td>
+		<td class="example" style="cursor: no-drop;">&nbsp;</td>
+		<td>The cursor indicates that the dragged item cannot be dropped here</td>
+	</tr>
+	<tr>
+		<td class="value">not-allowed</td>
+		<td class="example" style="cursor: not-allowed;">&nbsp;</td>
+		<td>The cursor indicates that the requested action will not be executed</td>
+	</tr>
+	<tr>
+		<td class="value">grab</td>
+		<td class="example" style="cursor: grab;">&nbsp;</td>
+		<td>The cursor indicates that something can be grabbed</td>
+	</tr>
+	<tr>
+		<td class="value">grabbing</td>
+		<td class="example" style="cursor: grabbing;">&nbsp;</td>
+		<td>The cursor indicates that something can be grabbed</td>
+	</tr>
+</table>
+
+</body>
+</html>
